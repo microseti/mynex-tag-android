@@ -1,0 +1,12 @@
+.gradle
+.idea
+.settings
+.project
+local.properties
+mynex-tag.jks
+bundletool-all-0.13.0.jar
+run-apk
+run-release
+translate.py
+app/build/
+app/regular/release/app-regular-release.aab

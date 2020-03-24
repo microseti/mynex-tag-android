@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId 'ru.mynex.tag'
+        buildConfigField 'boolean', 'HIDDEN_APP', 'false'
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 62
+        versionName '6.1'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    flavorDimensions 'default'
+    productFlavors {
+        regular {
+            isDefault.set(true)
+        }
+        // google
+        // hidden {
+        //     applicationId 'ru.mynex.tag.hidden'
+        //     buildConfigField 'boolean', 'HIDDEN_APP', 'true'
+        // }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.google.android.material:material:1.2.0-alpha04'
+    implementation 'androidx.preference:preference:1.1.0'
+    // testImplementation 'junit:junit:4.13'
+    // testImplementation 'org.robolectric:robolectric:4.1'
+    // googleImplementation 'com.google.firebase:firebase-core:17.2.2'
+    // googleImplementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    // googleImplementation 'com.google.android.gms:play-services-location:17.0.0'
+}
+

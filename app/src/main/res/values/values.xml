@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="settings_saddr_default_value" translatable="false">0.tcp.ngrok.io:17031</string> -->
+    <!-- <string name="settings_saddr_default_value" translatable="false">192.168.10.11:2622</string> -->
+    <string name="settings_saddr_default_value" translatable="false">ns1.mynex.ru:2622</string>
+
+    <string-array name="settings_accuracy_values" translatable="false">
+        <item>high</item>
+        <item>medium</item>
+        <item>low</item>
+    </string-array>
+
+    <string-array name="settings_accuracy_names">
+        <item>@string/settings_accuracy_high</item>
+        <item>@string/settings_accuracy_medium</item>
+        <item>@string/settings_accuracy_low</item>
+    </string-array>
+
+</resources>
